@@ -2,23 +2,24 @@ import { React } from "react";
 
 function ListingPageComponent({ onScroll, listInnerRef, userList, userImg }) {
   return (
-    <div>
+    <div className="list-container">
       <div
         onScroll={onScroll}
         ref={listInnerRef}
-        style={{ height: "100vh",  overflowY: "auto" }}
+        className="scrolling"
+        style={{ height: "100vh",  overflowY: "auto", display:"flex",flexWrap:"wrap",backgroundImage:" linear-gradient(to bottom right, #9795EF, #F9C5D1)"
+      }}
       >
         {userList.map((item, index) => {
           return (
             <div
               key={index}
               style={{
-                backgroundImage:"linear-gradient(to bottom right, rgba(255, 0, 0, 0.6), pink)",
-               
+                backgroundColor:"white",
                 width:"320px",
-                height:"480px",
+                height:"400px",
                 marginTop: "40px",
-                marginLeft: "500px",
+                marginLeft: "50px",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -27,9 +28,9 @@ function ListingPageComponent({ onScroll, listInnerRef, userList, userImg }) {
               }}
             > 
               <img style={{
-                  height: "200px",
+                  height: "100px",
                   borderRadius: "50%",
-                  backgroundColor:"pink",
+                  backgroundColor:"lavender",
                   boxShadow:
                     "0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 21px 0 rgba(0, 0, 0, 0.19)"
                 }} src={userImg[index].image} />

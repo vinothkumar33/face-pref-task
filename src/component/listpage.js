@@ -50,10 +50,13 @@ function ListingPageContainer({setview}) {
 
   return (
     <>
-    <div style={{
+    <div 
+    style={{
+      backgroundColor:" #9795EF"
+      }}>
+          <button style={{
        marginLeft:"1000px"
-       }}>
-          <button className="button" onClick={handleChange}>Logout</button>
+       }} className="button" onClick={handleChange}>Logout</button>
     </div>
     <ListigPageComponent
       onScroll={onScroll}

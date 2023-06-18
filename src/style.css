@@ -19,7 +19,7 @@ ul{
     height: 500px;
     margin-left:450px ;
     margin-top: 50px;
-    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.6), pink);
+    background-image: linear-gradient(to bottom right,#9795EF,#F9C5D1);
     box-shadow:rgb(107, 100, 100) 5px 5px 5px 5px;
     border-radius: 10px;
     text-align: center;
@@ -64,4 +64,15 @@ ul{
     background-color: white;
     height: 100vh;
     opacity: 0.6;
+}
+.list-container{
+    position:relative;
+    overflow:hidden;
+    overflow-y:auto;
+}
+.scrolling{
+    animation: scroll 10s linear 1s infinite;
+}
+@keyframes scroll {
+	100% { top: -100%; }
 }
